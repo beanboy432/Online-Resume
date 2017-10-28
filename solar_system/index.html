@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>solar_system</title>
+
+  <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
+
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body>
+  <div id="main">
+    <div id="pre-header" class="pad-top gray">
+      <div id="banner" class="center-content-horizontal"></div>
+      <ul id="topContacts" class="center-content-horizontal header-hat dark-gray pad-top"></ul>
+    </div>
+    <div id="header" class="center-content-horizontal clear-fix side-bar"></div>
+    <div style="clear: both;"></div>
+    <div id="workExperience" class="gray">
+      <h2>Work Experience</h2>
+    </div>
+    <div id="projects">
+      <h2>Projects</h2>
+    </div>
+    <div id="education" class="gray">
+      <h2>Education</h2>
+    </div>
+    <div id="lets-connect" class="dark-gray">
+      <h2 class="orange white-text center-text">Let's Connect</h2>
+        <ul id="footerContacts" class="flex-box">
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/jQuery.js"></script>
+  <script src="js/helper.js"></script>
+  <script src="js/resumeBuilder.js"></script>
+
+  <script src="libraries/p5.js" type="text/javascript"></script>
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+  <script src="p5/style/planets.js" type="text/javascript"></script>
+  <script src="p5/style/stars.js" type="text/javascript"></script>
+  <script src="p5/objects/planets.js" type="text/javascript"></script>
+  <script src="p5/objects/stars.js" type="text/javascript"></script>
+  <script src="sketch.js" type="text/javascript"></script>
+
+  <script>
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.backgroundColor = 'none';
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.backgroundColor = 'none';
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.backgroundColor = 'none';
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.backgroundColor = 'none';
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.backgroundColor = 'none';
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('lets-connect').style.backgroundColor = 'none';
+    }
+  </script>
+  <div id="p5Project">
+    <h2>MY P5* PROJECT</h2>
+  </div>
+</body>
+</html>
